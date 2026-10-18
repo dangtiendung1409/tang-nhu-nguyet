@@ -1,0 +1,31 @@
+{
+  "tool": "image_gen built-in",
+  "method": "Extract photo subject; transparent background; white die-cut sticker border. WebP files resized for game use.",
+  "stickers": [
+    {
+      "file": "/Users/dangtiendung/Downloads/gift_for_love/20-10/image/stickers/dog-boop.webp",
+      "prompt": "Use case: background-extraction. Asset type: a single photographic pet sticker for a tiny memory matching game card. Edit target: the attached photo. Primary request: extract the funny close-up dog snout being gently squeezed, preserve its enormous nose, ears, eyes and the supporting hand, remove the garden and floor. Keep the pet's true photographic identity, fur markings, face proportions and pose exactly recognizable. Not a cartoon, no redrawing, no beauty retouch. Center one cleanly cropped subject with a bold smooth white die-cut outline around its silhouette, compact readable composition, generous transparent margin. Actual transparent background outside the white silhouette. No text, hearts, other animals, decorative elements, watermark or rectangular photo frame. Output one sticker only."
+    },
+    {
+      "file": "/Users/dangtiendung/Downloads/gift_for_love/20-10/image/stickers/cat-yawn.webp",
+      "prompt": "Use case: background-extraction. Asset type: a single photographic pet sticker for a tiny memory matching game card. Edit target: the attached photo. Primary request: extract the gray tortoiseshell cat yawning with mouth wide open and one eye squinting, preserve its exact funny expression and extended front paws, remove desk books background. Keep the pet's true photographic identity, fur markings, face proportions and pose exactly recognizable. Not a cartoon, no redrawing, no beauty retouch. Center one cleanly cropped subject with a bold smooth white die-cut outline around its silhouette, compact readable composition, generous transparent margin. Actual transparent background outside the white silhouette. No text, hearts, other animals, decorative elements, watermark or rectangular photo frame. Output one sticker only."
+    },
+    {
+      "file": "/Users/dangtiendung/Downloads/gift_for_love/20-10/image/stickers/cat-upside-down.webp",
+      "prompt": "Use case: background-extraction. Asset type: a single photographic pet sticker for a tiny memory matching game card. Edit target: the attached photo. Primary request: extract the gray tortoiseshell cat lying upside down with its head tilted, preserve its upside-down head and golden eyes, remove the wooden floor. Keep the pet's true photographic identity, fur markings, face proportions and pose exactly recognizable. Not a cartoon, no redrawing, no beauty retouch. Center one cleanly cropped subject with a bold smooth white die-cut outline around its silhouette, compact readable composition, generous transparent margin. Actual transparent background outside the white silhouette. No text, hearts, other animals, decorative elements, watermark or rectangular photo frame. Output one sticker only."
+    },
+    {
+      "file": "/Users/dangtiendung/Downloads/gift_for_love/20-10/image/stickers/cat-bells.webp",
+      "prompt": "Use case: background-extraction. Asset type: a single photographic pet sticker for a tiny memory matching game card. Edit target: the attached photo. Primary request: extract the gray tortoiseshell cat sitting with yellow eyes and tiny pink collar bells, preserve pose and collar, remove plant stairs and column. Keep the pet's true photographic identity, fur markings, face proportions and pose exactly recognizable. Not a cartoon, no redrawing, no beauty retouch. Center one cleanly cropped subject with a bold smooth white die-cut outline around its silhouette, compact readable composition, generous transparent margin. Actual transparent background outside the white silhouette. No text, hearts, other animals, decorative elements, watermark or rectangular photo frame. Output one sticker only."
+    },
+    {
+      "file": "/Users/dangtiendung/Downloads/gift_for_love/20-10/image/stickers/cat-cone.webp",
+      "prompt": "Use case: background-extraction. Asset type: a single photographic pet sticker for a tiny memory matching game card. Edit target: the attached photo. Primary request: extract the gray tortoiseshell cat wearing its clear protective cone, preserve the cone and grumpy sideways gaze, remove carrier bag and floor. Keep the pet's true photographic identity, fur markings, face proportions and pose exactly recognizable. Not a cartoon, no redrawing, no beauty retouch. Center one cleanly cropped subject with a bold smooth white die-cut outline around its silhouette, compact readable composition, generous transparent margin. Actual transparent background outside the white silhouette. No text, hearts, other animals, decorative elements, watermark or rectangular photo frame. Output one sticker only."
+    },
+    {
+      "file": "/Users/dangtiendung/Downloads/gift_for_love/20-10/image/stickers/cat-sitting.webp",
+      "prompt": "Use case: background-extraction. Asset type: a single photographic pet sticker for a tiny memory matching game card. Edit target: the attached photo. Primary request: extract the gray tortoiseshell cat sitting and looking over its shoulder, preserve wide yellow eyes and seated pose, remove door and floor. Keep the pet's true photographic identity, fur markings, face proportions and pose exactly recognizable. Not a cartoon, no redrawing, no beauty retouch. Center one cleanly cropped subject with a bold smooth white die-cut outline around its silhouette, compact readable composition, generous transparent margin. Actual transparent background outside the white silhouette. No text, hearts, other animals, decorative elements, watermark or rectangular photo frame. Output one sticker only."
+    }
+  ],
+  "prompt_summary": "Tách chủ thể từ từng ảnh gốc, giữ biểu cảm và tư thế, nền trong suốt, viền sticker trắng; xuất WebP nhỏ cho trò lật thẻ."
+}

@@ -1,0 +1,251 @@
+/* Cùng một khổ trang và thang chữ cho trang nhận quà, thiệp và trò chơi. */
+:root {
+  --page-width: 1360px;
+  --page-gutter: clamp(20px, 5vw, 80px);
+  --page-header: 90px;
+  --hero-gap: clamp(32px, 4vw, 64px);
+  --hero-padding: clamp(36px, 5vh, 64px);
+}
+.site-header, .site-footer, .welcome, .journey {
+  width: min(var(--page-width), calc(100% - var(--page-gutter) * 2));
+  max-width: var(--page-width);
+  margin-inline: auto;
+}
+.site-header { min-height: var(--page-header); padding: 20px 0; gap: 20px; }
+.site-footer { padding: 24px 0; font-size: 10px; }
+.text-button { min-height: 44px; }
+.welcome {
+  min-height: calc(100svh - var(--page-header));
+  padding: var(--hero-padding) 0 72px;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  gap: var(--hero-gap);
+}
+.journey { padding: 0 0 42px; }
+.occasion-card {
+  min-height: calc(100svh - var(--page-header));
+  padding: var(--hero-padding) 0 72px;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  gap: var(--hero-gap);
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  text-align: left;
+}
+.welcome-copy, .occasion-copy, .gift-scene, .welcome-art { min-width: 0; }
+.welcome-copy h1, .occasion-copy h1 {
+  font: 500 clamp(42px, 4.5vw, 66px)/1.23 var(--serif);
+  letter-spacing: -1.6px;
+  margin: 20px 0;
+}
+.welcome-copy > .eyebrow, .occasion-copy > .eyebrow { font-size: 10px; letter-spacing: 1.5px; }
+.welcome-copy > p, .occasion-copy > p { font-size: clamp(14px, 1.1vw, 16px); line-height: 2; margin: 24px 0 30px; }
+.welcome-copy .primary-button, .occasion-copy .primary-button { font-size: 14px; padding: 16px 26px; min-height: 52px; }
+.gift-scribble { font-size: 27px; margin-top: 22px; }
+.occasion-postscript { font-size: 21px; margin-top: 18px; }
+.tiny-note { font-size: 12px; }
+.welcome-tags span { font-size: 11px; }
+.welcome-art, .gift-scene { width: 100%; max-width: 470px; margin-inline: auto; padding: 18px 24px 50px; }
+.bouquet, .gift-bouquet { height: clamp(250px, 23vw, 330px); }
+.occasion-art { padding: 30px 20px 24px; }
+.bouquet-label, .postcard-top > span:first-child { font-size: 9px; }
+.occasion-art > .handwritten { font-size: clamp(20px, 2vw, 26px); }
+.bouquet-touch { font-size: 11px; padding: 7px 12px; }
+.gift-pet-cat { width: clamp(82px, 8vw, 122px); height: clamp(82px, 8vw, 122px); left: 0; }
+.gift-pet-dog { width: clamp(80px, 8vw, 116px); height: clamp(80px, 8vw, 116px); right: 0; }
+.pet-caption { left: 50%; translate: -50% 0; width: 160px; font-size: 19px; bottom: 0; }
+.flower-reply { margin-top: 0; font-size: 25px; }
+.wish-scrapbook { padding: 52px 12px 38px; }
+.wish-heading .eyebrow { font-size: 10px; }
+.wish-heading h2 { font-size: 34px; }
+.wish-note { padding: 34px 28px 28px; }
+.wish-note > small { font-size: 11px; }
+.wish-note h3 { font-size: clamp(25px, 2.2vw, 31px); }
+.wish-note p { font-size: 14px; }
+.wish-sign { font-size: 24px; }
+
+/* Các trò chơi nới theo khổ trang; ảnh và nút giữ kích thước có thể chạm. */
+.extra-games > summary { padding: 24px 28px; }
+.extra-games-copy > strong { font-size: 28px; }
+.extra-games-copy > small, .games-invitation { font-size: 13px; }
+.extra-games-body { padding: 0 clamp(14px, 2.5vw, 36px) 26px; }
+.journey-map { gap: 14px; margin: 24px 0; }
+.station { font-size: 13px; gap: 12px; padding: 16px 12px; }
+.station small { font-size: 9px; }
+.game-card { padding: clamp(20px, 2.5vw, 36px); }
+.pill { font-size: 10px; }
+.game-progress { font-size: 12px; white-space: nowrap; }
+.game-heading { margin: 22px 0 28px; }
+.game-heading h2 { font-size: clamp(28px, 2.7vw, 38px); }
+.game-heading p { font-size: 14px; max-width: 720px; margin: 10px auto 0; }
+.game-bottom { align-items: center; gap: 16px; }
+.game-bottom > span { font-size: 12px; max-width: none; }
+.game-bottom .text-button, .journey-bottom .text-button { font-size: 12px; }
+.completion strong { font-size: 15px; }
+.completion p { font-size: 13px; }
+.completion .primary-button { font-size: 12px; min-height: 44px; }
+.puzzle-layout { grid-template-columns: minmax(0, 520px) minmax(180px, 260px); gap: clamp(24px, 4vw, 54px); }
+.puzzle-help { font-size: 13px; min-height: 44px; }
+.puzzle-tools .text-button { font-size: 12px; }
+.puzzle-moves { font-size: 12px; }
+.puzzle-note { font-size: 23px; }
+.memory-board { max-width: 960px; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 16px; }
+.memory-card { aspect-ratio: 1 / 1.08; }
+.memory-actions { gap: 20px; }
+.memory-actions > span { font-size: 13px; }
+.memory-actions button { font-size: 13px; min-height: 44px; padding: 8px 16px; }
+.arcade-layout, .arcade-complete, .arcade-footer { max-width: 960px; }
+.arcade-layout { gap: 32px; }
+.claw-window { height: clamp(280px, 23vw, 340px); }
+.claw-toy { height: clamp(68px, 6vw, 90px); }
+.machine-marquee { font-size: 11px; }
+.machine-score { font-size: 10px; gap: 8px; }
+.machine-controls { gap: 12px; }
+.claw-arrow { flex: 0 0 40px; }
+.claw-drop { flex: 1; min-width: 0; min-height: 44px; font-size: 13px; }
+.claw-machine .claw-status { font-size: 12px; }
+.prize-placeholder p, .prize-ticket p { font-size: 14px; }
+.collection-label strong { font-size: 13px; }
+.collection-label > span { font-size: 11px; }
+.pet-collection > p, .sticker-file-note { font-size: 11px; }
+.prize-eyebrow { font-size: 9px; }
+.prize-ticket .save-sticker, .prize-ticket #grab-more, .arcade-footer .text-button { font-size: 12px; }
+.gift-unlocked-copy p { font-size: 14px; }
+.gift-downloads .primary-button, .gift-downloads .text-button { font-size: 12px; }
+
+/* Thiệp có một vùng cuộn riêng, không kéo trang phía sau theo. */
+html:has(#letter-dialog[open]) { overflow: hidden; }
+.letter-dialog { width: min(1040px, calc(100vw - 48px)); max-height: calc(100dvh - 48px); }
+.letter-layout { grid-template-columns: minmax(0, .8fr) minmax(0, 1.25fr); }
+.letter-flowers img { height: clamp(230px, 28vw, 350px); }
+.letter-content { padding: 48px clamp(28px, 4vw, 50px) 36px; }
+.letter-content h2 { font-size: clamp(30px, 3vw, 40px); }
+.letter-content > p { font-size: 15px; line-height: 1.95; }
+.letter-date, .letter-flowers .eyebrow { font-size: 10px; }
+.letter-sign .primary-button, .letter-content > .text-button { font-size: 13px; min-height: 44px; }
+.dialog-close {
+  display: block;
+  float: none;
+  width: 44px;
+  height: 44px;
+  margin: 8px 10px -52px auto;
+}
+
+/* Đoạn mở đầu vẫn cuộn được khi màn hình ngắn hoặc xoay ngang. */
+.gift-opening[open] { display: flex; flex-direction: column; }
+.garden-stage { flex: none; margin: auto; }
+#garden-canvas { height: clamp(180px, 36dvh, 325px); }
+
+@media (max-width: 900px) {
+  :root { --page-header: 76px; }
+  .site-header { padding-block: 16px; }
+  .welcome, .occasion-card { grid-template-columns: minmax(0, 1fr); min-height: 0; gap: 40px; padding: 40px 0 68px; text-align: center; }
+  .welcome-copy, .occasion-copy { max-width: 660px; margin-inline: auto; text-align: center; }
+  .welcome-copy h1, .occasion-copy h1 { font-size: clamp(40px, 6vw, 54px); }
+  .welcome-tags { justify-content: center; }
+  .welcome-art, .gift-scene { max-width: 430px; }
+  .bouquet, .gift-bouquet { height: 290px; }
+  .wish-note { padding: 28px 20px 22px; }
+  .wish-note > small { font-size: 10px; }
+  .wish-note p { font-size: 13px; }
+  .station { font-size: 11px; gap: 9px; padding-inline: 8px; }
+  .memory-board { grid-template-columns: repeat(4, minmax(0, 1fr)); max-width: 680px; }
+  .arcade-layout { grid-template-columns: minmax(0, 1fr); max-width: 460px; }
+  .claw-window { height: 300px; }
+  .claw-toy { height: 78px; }
+  .letter-content { padding: 46px 28px 30px; }
+}
+@media (max-width: 680px) {
+  .puzzle-layout { grid-template-columns: minmax(0, 420px); gap: 24px; }
+  .puzzle-guide { display: grid; grid-template-columns: 100px minmax(0, 1fr); gap: 8px 16px; align-items: center; }
+  .puzzle-reference { grid-row: span 3; }
+  .puzzle-note { font-size: 19px; margin: 0; }
+  .puzzle-tools { margin: 0; }
+  .letter-layout { grid-template-columns: minmax(0, 1fr); }
+  .letter-flowers { position: relative; min-height: 150px; padding: 26px 26px 18px; align-items: flex-start; text-align: left; }
+  .letter-flowers img { position: absolute; width: 110px; height: 145px; right: 22px; top: 8px; margin: 0; transform: rotate(12deg); }
+  .letter-flowers .eyebrow { max-width: calc(100% - 100px); font-size: 9px; }
+  .letter-flowers .handwritten { font-size: 23px; margin-top: 15px; }
+  .letter-content { padding: 26px 24px 32px; }
+  .letter-content > p { font-size: 14px; }
+  .letter-date { font-size: 9px; }
+}
+@media (max-width: 560px) {
+  :root { --page-gutter: 20px; --page-header: 74px; }
+  .brand { font-size: 14px; }
+  .edition { font-size: 8px; }
+  .welcome, .occasion-card { padding: 30px 0 60px; gap: 34px; }
+  .welcome-copy h1, .occasion-copy h1 { font-size: clamp(32px, 10vw, 44px); letter-spacing: -1px; margin: 18px 0; }
+  .welcome-copy > .eyebrow, .occasion-copy > .eyebrow { font-size: 8px; letter-spacing: 1.2px; }
+  .welcome-copy > p, .occasion-copy > p { font-size: 14px; margin: 20px 0 26px; }
+  .welcome-copy .primary-button, .occasion-copy .primary-button { font-size: 13px; padding: 14px 22px; min-height: 48px; }
+  .gift-scribble { font-size: 23px; margin-top: 18px; }
+  .occasion-postscript { font-size: 19px; }
+  .welcome-tags { gap: 6px; }
+  .welcome-tags span { font-size: 10px; }
+  .welcome-art, .gift-scene { width: min(100%, 360px); padding: 18px 20px 48px; }
+  .bouquet, .gift-bouquet { height: clamp(215px, 65vw, 275px); }
+  .occasion-art { padding: 28px 16px 22px; }
+  .bouquet-label, .postcard-top > span:first-child { font-size: 8px; }
+  .occasion-art > .handwritten { font-size: 22px; }
+  .bouquet-touch { font-size: 10px; }
+  .pet-caption { font-size: 16px; width: 140px; }
+  .flower-reply { font-size: 21px; margin-inline: 8px; }
+  .wish-scrapbook { padding: 36px 10px; }
+  .wish-heading h2 { font-size: 28px; }
+  .wish-heading .eyebrow { font-size: 8px; }
+  .wish-notes { grid-template-columns: minmax(0, 1fr); gap: 26px; }
+  .wish-note { padding: 28px 24px; }
+  .wish-note h3 { font-size: 27px; }
+  .wish-note h3 br { display: none; }
+  .wish-note p { font-size: 14px; }
+  .wish-sign { font-size: 20px; }
+  .extra-games > summary { padding: 20px 16px; gap: 10px; }
+  .extra-games-copy > strong { font-size: 24px; }
+  .extra-games-copy > small, .games-invitation { font-size: 12px; }
+  .extra-games-body { padding: 0 12px 20px; }
+  .journey-map { gap: 7px; }
+  .station { flex-direction: column; text-align: center; padding: 12px 4px; font-size: 11px; line-height: 1.6; }
+  .station small { font-size: 8px; letter-spacing: .5px; }
+  .station-icon { width: 36px; height: 36px; }
+  .station-check { left: auto; right: 5px; }
+  .game-card { padding: 20px 14px; }
+  .game-topline { flex-wrap: wrap; gap: 8px; }
+  .pill { font-size: 9px; letter-spacing: .6px; }
+  .game-progress { font-size: 11px; }
+  .game-heading { margin: 18px 0 22px; }
+  .game-heading h2 { font-size: 27px; }
+  .game-heading p { font-size: 13px; }
+  .game-bottom { flex-direction: column; align-items: stretch; gap: 4px; }
+  .game-bottom > span { font-size: 12px; max-width: none; }
+  .game-bottom .text-button { font-size: 12px; text-align: right; }
+  .memory-board { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 9px; }
+  .memory-card { aspect-ratio: 1 / 1.08; }
+  .memory-actions { flex-wrap: wrap; gap: 6px 16px; }
+  .puzzle-help { font-size: 11px; }
+  .puzzle-moves { font-size: 10px; }
+  .machine-marquee { font-size: 9px; letter-spacing: .5px; }
+  .machine-score { font-size: 8px; }
+  .machine-controls { gap: 8px; padding-inline: 8px; }
+  .claw-arrow { flex-basis: 36px; width: 36px; height: 40px; }
+  .claw-drop { font-size: 12px; padding-inline: 7px; }
+  .claw-window { height: 280px; }
+  .claw-toy { height: 68px; }
+  .collection-label { flex-wrap: wrap; gap: 4px; }
+  .collection-label strong { font-size: 12px; }
+  .collection-label > span { font-size: 11px; }
+  .arcade-footer { flex-wrap: wrap; gap: 6px 16px; }
+  .journey-bottom { flex-wrap: wrap; gap: 6px 16px; }
+  .journey-bottom .text-button { font-size: 11px; }
+  .letter-dialog { width: calc(100vw - 24px); max-height: calc(100dvh - 24px); border-radius: 14px; }
+  .letter-content h2 { font-size: 30px; }
+  #garden-canvas { height: clamp(180px, 33dvh, 280px); }
+  .site-footer { font-size: 9px; }
+}
+@media (max-height: 650px) {
+  .gift-opening { padding-block: 12px; }
+  .garden-stage h2 { margin-top: 8px; font-size: 30px; }
+  #garden-canvas { height: clamp(120px, 30dvh, 195px); }
+  .garden-paper-label { margin-top: 10px; }
+  .garden-hint { margin-block: 10px; }
+}

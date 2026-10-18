@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fff8f2" />
+    <link rel="icon" href="../favicon/flower.svg" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="./love.css" />
+    <link rel="stylesheet" href="../responsive.css" />
+    <script src="../garden-opening.js" defer></script>
+    <script src="../app.js" defer></script>
+    <title>Quà 20/10 · Gửi Như Nguyệt</title>
+  </head>
+  <body data-page="journey">
+    <header class="site-header">
+      <a class="brand" href="../index.html"
+        ><span class="brand-flower" aria-hidden="true">✿</span> một ngày thật
+        xinh<span class="brand-dot">.</span></a
+      >
+    </header>
+    <main class="journey">
+      <div class="journey-heading occasion-card">
+        <div class="occasion-copy">
+          <span class="eyebrow">MỘT CHIẾC QUÀ 20/10 · GỬI NHƯ NGUYỆT</span>
+          <span class="gift-scribble handwritten">bà ơi, tui có chút quà nè…</span>
+          <h1 tabindex="-1">Một chút quà,<br /><em>một ngày thật xinh.</em></h1>
+          <p>20/10 vui vẻ nha, Như Nguyệt!<br />Tui gửi bà bó hoa này, mấy lời chúc nhỏ,<br />và một chút dịu dàng cho hôm nay.</p>
+          <button class="primary-button" id="read-greeting">Mở thiệp của bà <span aria-hidden="true">✿</span></button>
+          <span class="occasion-postscript handwritten">tui ngồi viết mấy dòng này cho bà đó</span>
+        </div>
+        <div class="gift-scene">
+          <span class="scene-spark scene-spark-one" aria-hidden="true">✧</span>
+          <span class="scene-spark scene-spark-two" aria-hidden="true">✿</span>
+          <button class="occasion-art" id="receive-flowers" aria-label="Nhận bó hoa và một lời chúc 20/10">
+            <span class="bouquet-tape" aria-hidden="true"></span>
+            <span class="occasion-date" aria-hidden="true">20<span>10</span></span>
+            <span class="bouquet-label">MỘT BÓ HOA DÀNH RIÊNG CHO BÀ</span>
+            <img class="gift-bouquet" src="../image/hoa4.png" alt="Bó tulip hồng tui tặng Như Nguyệt" />
+            <span class="handwritten">hoa này là của bà nè ✿</span>
+            <span class="bouquet-touch">Chạm bó hoa để nhận lời chúc ↗</span>
+          </button>
+          <img class="gift-pet gift-pet-cat" src="../image/stickers/cat-bells.webp" alt="" aria-hidden="true" />
+          <img class="gift-pet gift-pet-dog" src="../image/stickers/dog-boop.webp" alt="" aria-hidden="true" />
+          <span class="pet-caption handwritten" aria-hidden="true">tụi tui giao hoa phụ nè!</span>
+        </div>
+      </div>
+      <p class="flower-reply handwritten" id="flower-reply" role="status">Gửi bà một bó hoa, mong đổi được một nụ cười ✿</p>
+      <section class="wish-scrapbook" aria-labelledby="wish-title">
+        <div class="wish-heading">
+          <span class="eyebrow">TUI GÓI THÊM MẤY ĐIỀU NÀY NỮA</span>
+          <h2 id="wish-title">Mong ngày của bà có…</h2>
+        </div>
+        <div class="wish-notes">
+          <article class="wish-note wish-peach">
+            <span class="wish-doodle" aria-hidden="true">☀</span><small>một chút thảnh thơi</small>
+            <h3>Ăn ngon,<br /> ngủ một giấc đã.</h3>
+            <p>Việc nhiều thì để từ từ. Hôm nay nhớ tự thưởng món bà thích nha.</p>
+          </article>
+          <article class="wish-note wish-pink">
+            <span class="wish-doodle" aria-hidden="true">✿</span><small>một chút may mắn</small>
+            <h3>Làm gì cũng<br /> suôn sẻ hơn xíu.</h3>
+            <p>Ra đường gặp đèn xanh, mở điện thoại gặp tin vui. Vậy là quá ổn ha!</p>
+          </article>
+          <article class="wish-note wish-green">
+            <span class="wish-doodle" aria-hidden="true">✧</span><small>và thiệt nhiều niềm vui</small>
+            <h3>Cứ vui theo<br /> cách của bà.</h3>
+            <p>Có thời gian cho mấy điều mình thích, có người ngồi nghe bà kể chuyện.</p>
+          </article>
+        </div>
+        <p class="wish-sign handwritten">quà nhỏ thôi, lời chúc là thiệt lòng đó nha.</p>
+      </section>
+      <details class="extra-games" id="extra-games">
+        <summary>
+          <span class="extra-games-icon" aria-hidden="true">✧</span>
+          <span class="extra-games-copy"><strong>Chơi thêm chút nha?</strong><small>Mấy bé có ghép ảnh, lật thẻ với gắp thú nè.</small></span>
+          <span class="extra-games-toggle" aria-hidden="true">+</span>
+        </summary>
+        <div class="extra-games-body">
+          <p class="games-invitation">Bà thích trò nào thì chọn trò đó nha. Không vội đâu ✿</p>
+          <nav class="journey-map" aria-label="Chọn trò chơi thêm">
+            <button class="station active" data-station="0" aria-current="true">
+              <span class="station-icon">▧</span
+              ><span><small>GHÉP ẢNH</small>Bé mèo của bà</span
+              ><span class="station-check" aria-hidden="true"></span>
+            </button>
+            <button class="station" data-station="1">
+              <span class="station-icon">✿</span
+              ><span><small>LẬT 12 THẺ</small>Tìm mấy cặp quen</span
+              ><span class="station-check" aria-hidden="true"></span>
+            </button>
+            <button class="station" data-station="2">
+              <span class="station-icon">✧</span
+              ><span><small>GẮP THÚ</small>Gom lời chúc nhỏ</span
+              ><span class="station-check" aria-hidden="true"></span>
+            </button>
+          </nav>
+          <section class="game-card" aria-labelledby="game-title">
+            <div class="game-topline">
+              <span class="pill" id="game-category">20/10 · GHÉP MỘT NỤ CƯỜI</span
+              ><span class="game-progress" id="game-progress">0 / 9 mảnh đúng</span>
+            </div>
+            <div class="game-heading">
+              <h2 id="game-title" tabindex="-1">Chúc bà ngày nào cũng có chuyện để cười.</h2>
+              <p id="game-description">
+                Ghép ảnh bé mèo cùng tui nha. Chạm hai mảnh bất kỳ để đổi chỗ,
+                đủ 9 mảnh là xong nè.
+              </p>
+            </div>
+            <div id="game-area"></div>
+            <section
+              class="claw-stage"
+              id="final-note"
+              aria-labelledby="game-title"
+              hidden
+            >
+              <div class="arcade-layout">
+                <div class="claw-machine">
+                  <div class="machine-marquee">
+                    <span aria-hidden="true">✦</span> QUÀ 20/10 · GỬI NHƯ NGUYỆT
+                    <span aria-hidden="true">✦</span>
+                  </div>
+                  <div class="machine-score">
+                    <span>GẮP MỘT BÉ · GỬI MỘT LỜI CHÚC</span
+                    ><span id="claw-count">0 / 6 bé</span>
+                  </div>
+                  <div
+                    class="claw-window"
+                    id="claw-window"
+                    style="--claw-x: 50%; --cable: 30px"
+                  >
+                    <div class="claw-rail" aria-hidden="true"></div>
+                    <div class="claw-carriage" aria-hidden="true">
+                      <div class="claw-cable"></div>
+                      <div class="claw-grabber">
+                        <svg viewBox="0 0 64 52" fill="none">
+                          <path
+                            d="M32 2V13M21 13H43M24 15L12 31L19 46M40 15L52 31L45 46M32 15V37"
+                            stroke="currentColor"
+                            stroke-width="5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <circle
+                            cx="32"
+                            cy="13"
+                            r="7"
+                            fill="#fff2ca"
+                            stroke="currentColor"
+                            stroke-width="3"
+                          /></svg
+                        ><img id="claw-held" alt="" hidden />
+                      </div>
+                    </div>
+                    <div
+                      class="claw-lanes"
+                      id="claw-lanes"
+                      role="group"
+                      aria-label="Chọn cột có bé bà muốn gắp"
+                    ></div>
+                    <span class="claw-chute" aria-hidden="true">QUÀ RA ĐÂY ↘</span>
+                  </div>
+                  <div class="machine-controls">
+                    <button
+                      class="claw-arrow"
+                      id="claw-left"
+                      aria-label="Di chuyển càng gắp sang trái"
+                    >
+                      ←
+                    </button>
+                    <button class="primary-button claw-drop" id="claw-drop">
+                      Gắp một bé! <span aria-hidden="true">↓</span>
+                    </button>
+                    <button
+                      class="claw-arrow"
+                      id="claw-right"
+                      aria-label="Di chuyển càng gắp sang phải"
+                    >
+                      →
+                    </button>
+                  </div>
+                  <p class="claw-status" id="claw-status" role="status">
+                    Chạm cột để chọn, hoặc dùng hai nút mũi tên nha.
+                  </p>
+                </div>
+                <div class="arcade-pocket">
+                  <div class="prize-placeholder" id="prize-placeholder">
+                    <span aria-hidden="true">✧</span>
+                    <h4>Một bé gửi lời chúc 20/10</h4>
+                    <p>
+                      Gắp một bé là thiệp lời chúc hiện ra nè. Bà thích thì gắp thêm để gom cả bộ sticker nha!
+                    </p>
+                    <span class="handwritten">gắp thử một bé coi ↙</span>
+                  </div>
+                  <article
+                    class="prize-ticket"
+                    id="prize-ticket"
+                    aria-labelledby="prize-title"
+                    hidden
+                  >
+                    <span class="prize-eyebrow">STICKER CỦA BÀ · LƯU VỀ NÈ</span
+                    ><img id="prize-image" alt="" /><span
+                      class="prize-stamp"
+                      aria-hidden="true"
+                      >LUCKY<br />20.10</span
+                    >
+                    <h4 id="prize-title" tabindex="-1"></h4>
+                    <p id="prize-message" aria-live="polite"></p>
+                    <span class="prize-sign handwritten"
+                      >Tui gửi bà chút năng lượng tốt nè ✿</span
+                    >
+                    <a class="primary-button save-sticker" id="save-sticker" download
+                      >Lưu sticker này ↓</a
+                    >
+                    <small class="sticker-file-note"
+                      >PNG nền trong suốt · dùng trang trí ảnh cũng xinh</small
+                    >
+                    <button class="text-button" id="grab-more">
+                      Gắp thêm một bé ↗
+                    </button>
+                  </article>
+                  <div class="pet-collection">
+                    <div class="collection-label">
+                      <strong>Túi niềm vui của bà</strong
+                      ><span id="collection-count">Còn 6 bé đang chờ</span>
+                    </div>
+                    <div
+                      class="collection-slots"
+                      id="collection-slots"
+                      role="group"
+                      aria-label="Bộ sưu tập quà đã gắp"
+                    ></div>
+                    <p>
+                      Mỗi bé mang một lời chúc. Bà thích bé nào thì chạm để đọc lại và lưu sticker nha!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <section
+                class="arcade-complete gift-unlocked"
+                id="arcade-complete"
+                aria-labelledby="gift-unlocked-title"
+                hidden
+              >
+                <img class="greeting-bouquet" src="../image/hoa4.png" alt="Bó tulip hồng tui tặng bà" />
+                <div class="gift-unlocked-copy">
+                  <span class="eyebrow">20/10 VUI VẺ NHA BÀ ✿</span>
+                  <h4 id="gift-unlocked-title" tabindex="-1">
+                    Thiệp 20/10 tui<br />gửi Như Nguyệt.
+                  </h4>
+                  <p>
+                    Chúc bà luôn có thời gian cho điều mình thích và thiệt nhiều lý do để cười. Mấy lời còn lại tui viết trong thiệp nè!
+                  </p>
+                  <div class="gift-downloads">
+                    <button class="primary-button" id="open-letter">Đọc thiệp tui gửi ✿</button>
+                    <a
+                      class="text-button"
+                      href="../gifts/bo-sticker-nhu-nguyet.zip"
+                      download="Bo-6-sticker-tang-Nhu-Nguyet.zip"
+                      id="download-sticker-pack"
+                      >Tải bộ 6 sticker ↓</a
+                    >
+                  </div>
+
+                </div>
+              </section>
+              <div class="arcade-footer">
+                <button class="text-button" id="back-to-memory">
+                  ↩ Về trò lật thẻ</button
+                ><button class="text-button" id="reset-claw">↻ Gắp lại từ đầu</button>
+              </div>
+              <div id="finale-confetti" aria-hidden="true"></div>
+            </section>
+
+            <div class="completion" id="completion" hidden>
+              <span class="completion-icon" aria-hidden="true">✦</span>
+              <div>
+                <strong id="completion-title"></strong>
+                <p id="completion-description"></p>
+              </div>
+              <button class="primary-button" id="next-station">
+                Chơi trò khác <span aria-hidden="true">→</span>
+              </button>
+            </div>
+            <div class="game-bottom">
+              <span id="game-tip"
+                >Nhìn ảnh mẫu rồi chạm hai mảnh để đổi. Không tính giờ đâu bà
+                ✿</span
+              ><button class="text-button" id="skip-station">
+                Đổi trò khác nha →
+              </button>
+            </div>
+          </section>
+          <div class="journey-bottom">
+            <button class="text-button" id="back-to-gift">↑ Về món quà của bà</button>
+            <button class="text-button" id="restart">↻ Chơi lại mấy trò nhỏ</button>
+          </div>
+        </div>
+      </details>
+      <div class="opening-replay-row"><button class="text-button" data-replay-opening>↺ Xem lại lời mở đầu</button></div>
+      <p class="gift-goodbye handwritten">20/10 vui vẻ nha, Như Nguyệt. Nhớ cười nhiều đó ✿</p>
+    </main>
+    <footer class="site-footer">
+      <span>MỘT CHIẾC QUÀ 20/10 NHO NHỎ QUA MÀN HÌNH</span
+      ><span>20.10 · HAVE A NICE DAY ✿</span>
+    </footer>
+    <dialog id="letter-dialog" class="letter-dialog" aria-labelledby="letter-title">
+      <button class="dialog-close" id="close-letter" aria-label="Đóng thiệp chúc">×</button>
+      <div class="letter-layout">
+        <div class="letter-flowers">
+          <span class="eyebrow">CHÚC BÀ 20/10 THẬT VUI</span>
+          <img src="../image/hoa4.png" alt="Bó tulip hồng tui tặng bà" />
+          <span class="handwritten">Một bó hoa,<br />mấy lời chúc vui.</span>
+        </div>
+        <article class="letter-content">
+          <span class="letter-date">20 THÁNG 10 · TUI GỬI NHƯ NGUYỆT</span>
+          <h2 id="letter-title">Gửi Như Nguyệt,</h2>
+          <p id="letter-text"></p>
+          <button class="text-button" id="read-all">Hiện cả lời chúc ✿</button>
+          <div class="letter-sign" id="letter-sign" hidden>
+            <span class="handwritten">Chúc bà luôn vui và xịn như vậy nha ✿</span>
+            <button class="primary-button" id="finish-letter">Tui nhận được rồi nè ✿</button>
+          </div>
+        </article>
+      </div>
+      <div id="letter-confetti" aria-hidden="true"></div>
+    </dialog>
+    <dialog class="gift-opening garden-opening" id="gift-opening" aria-labelledby="opening-title" aria-describedby="opening-message">
+      <div class="garden-stage">
+        <span class="garden-edition">20 THÁNG 10 · MỘT KHU VƯỜN NHỎ CHO BÀ</span>
+        <h2 id="opening-title" tabindex="-1" autofocus>Như Nguyệt ơi,</h2>
+        <p id="opening-message" aria-live="polite">Tui trồng một chút niềm vui cho bà nè.</p>
+        <div class="garden-paper">
+          <span class="garden-paper-label" id="garden-instruction">Chạm hoặc kéo tay ở đây để hoa nở</span>
+          <canvas id="garden-canvas" tabindex="0" role="img" aria-describedby="garden-instruction" aria-label="Khu vườn tương tác: chạm hoặc kéo để hoa nở. Dùng Enter hoặc phím cách cũng có thể trồng hoa."></canvas>
+          <div class="garden-guide" aria-hidden="true">
+            <svg class="garden-guide-stroke" viewBox="0 0 220 90" fill="none"><path d="M20 70C70 69 105 20 194 28" /><path class="garden-guide-arrow" d="M185 20L197 28L185 36" /></svg>
+            <svg class="garden-guide-hand" viewBox="0 0 40 44" fill="none"><path d="M13 23V6a3 3 0 0 1 6 0v12l3-2a3 3 0 0 1 4 1l2-1a3 3 0 0 1 4 2l1 1a3 3 0 0 1 4 3v9c0 6-4 10-10 10h-5c-4 0-7-2-9-5L5 26c-3-4 1-8 4-5l4 4" /><circle cx="16" cy="7" r="5" /></svg>
+          </div>
+          <span class="garden-paper-date" aria-hidden="true">20 / 10</span>
+        </div>
+        <p class="garden-hint handwritten" id="opening-hint">Bà thử chạm vào vườn hoa phía trên nha ↑</p>
+        <button class="primary-button garden-gather" id="unwrap-gift">Gói hoa gửi bà <span aria-hidden="true">↗</span></button>
+        <button class="text-button garden-skip" id="skip-opening">Đi thẳng tới quà →</button>
+        <span class="garden-sign handwritten">tui gói chút niềm vui, gửi riêng bà đó.</span>
+      </div>
+    </dialog>
+    <audio
+      id="background-music"
+      src="../audio/cu-chill-thoi.mp3"
+      autoplay
+      loop
+      preload="auto"
+      hidden
+    ></audio>
+    <div class="toast" id="toast" role="status"></div>
+    <div id="celebration" aria-hidden="true"></div>
+    <noscript
+      ><p class="noscript-note">
+        Bật JavaScript để chơi nhé. Chúc Như Nguyệt một ngày 20/10 thật vui và
+        gặp nhiều điều tốt đẹp! ✿
+      </p></noscript
+    >
+  </body>
+</html>

@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fff8f2" />
+    <meta
+      name="description"
+      content="Một bó hoa và thiệp chúc 20/10 dành riêng cho Như Nguyệt, kèm vài trò vui nho nhỏ."
+    />
+    <link rel="icon" href="./favicon/flower.svg" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+    <script src="./garden-opening.js" defer></script>
+    <script src="./app.js" defer></script>
+    <title>Một ngày thật xinh · 20.10</title>
+  </head>
+  <body data-page="welcome">
+    <header class="site-header">
+      <a class="brand" href="./index.html"
+        ><span class="brand-flower" aria-hidden="true">✿</span> một ngày thật
+        xinh<span class="brand-dot">.</span></a
+      >
+      <div class="header-tools">
+        <span class="edition">PHIÊN BẢN ĐẶC BIỆT · 20.10</span>
+      </div>
+    </header>
+    <main class="welcome">
+      <section class="welcome-copy">
+        <span class="eyebrow"
+          ><span aria-hidden="true">♡</span>
+          <span id="welcome-recipient"
+            >CHỈ DÀNH RIÊNG CHO NHƯ NGUYỆT</span
+          ></span
+        >
+        <h1 tabindex="-1">Như Nguyệt ơi,<br /><em>20/10 vui vẻ nha!</em></h1>
+        <p>
+          Tui gửi bà một bó hoa, một tấm thiệp,<br />và lời chúc bà luôn vui, luôn xịn,<br />làm gì cũng gặp điều dễ thương.
+        </p>
+        <a class="primary-button" href="./love/love.html#letter"
+          >Mở thiệp tui gửi <span aria-hidden="true">↗</span></a
+        >
+        <span class="tiny-note"
+          >Gửi Như Nguyệt · chút quà cho ngày của bà</span
+        >
+        <div class="welcome-tags" aria-label="Những điều đang chờ bà">
+          <span>✿ một bó hoa</span><span>♡ lời chúc riêng</span><span>✧ vài trò vui nhỏ</span>
+        </div>
+      </section>
+      <section class="welcome-art" aria-label="Thiệp hoa dành tặng Như Nguyệt">
+        <div class="art-spark spark-one" aria-hidden="true">✧</div>
+        <div class="art-spark spark-two" aria-hidden="true">✳</div>
+        <a class="postcard" href="./love/love.html#letter" aria-label="Mở thiệp 20/10 tui gửi Như Nguyệt">
+          <div class="postcard-top">
+            <span>TUI GỬI BÀ MỘT NGÀY DỊU DÀNG</span
+            ><span class="postage">20<br /><b>10</b></span>
+          </div>
+          <img
+            class="bouquet"
+            src="./image/hoa4.png"
+            alt="Bó hoa tulip hồng với chiếc nơ tím"
+          />
+          <div class="postcard-message">
+            Một bó hoa nhỏ xíu,<br />chúc bà 20/10 thật vui.
+          </div>
+          <span class="handwritten postcard-sign"
+            >chúc bà một ngày vui nha ✿</span
+          >
+        </a>
+        <img class="welcome-pet welcome-pet-cat" src="./image/stickers/cat-bells.webp" alt="" aria-hidden="true" />
+        <img class="welcome-pet welcome-pet-dog" src="./image/stickers/dog-boop.webp" alt="" aria-hidden="true" />
+        <button
+          class="love-sticker"
+          id="secret-sticker"
+          aria-label="Chạm để nhận một lời nhắn bí mật"
+        >
+          <span aria-hidden="true">♡</span><small>chạm thử nè</small>
+        </button>
+        <span class="art-label handwritten"
+          >một món quà bé xíu<br />tui làm riêng cho bà nè ↗</span
+        >
+      </section>
+    </main>
+      <div class="opening-replay-row"><button class="text-button" data-replay-opening>↺ Xem lại lời mở đầu</button></div>
+    <footer class="site-footer">
+      <span>MỘT MÓN QUÀ 20/10 TUI LÀM RIÊNG CHO BÀ</span
+      ><span>HAPPY VIETNAMESE WOMEN’S DAY ♡</span>
+    </footer>
+    <dialog class="gift-opening garden-opening" id="gift-opening" aria-labelledby="opening-title" aria-describedby="opening-message">
+      <div class="garden-stage">
+        <span class="garden-edition">20 THÁNG 10 · MỘT KHU VƯỜN NHỎ CHO BÀ</span>
+        <h2 id="opening-title" tabindex="-1" autofocus>Như Nguyệt ơi,</h2>
+        <p id="opening-message" aria-live="polite">Tui trồng một chút niềm vui cho bà nè.</p>
+        <div class="garden-paper">
+          <span class="garden-paper-label" id="garden-instruction">Chạm hoặc kéo tay ở đây để hoa nở</span>
+          <canvas id="garden-canvas" tabindex="0" role="img" aria-describedby="garden-instruction" aria-label="Khu vườn tương tác: chạm hoặc kéo để hoa nở. Dùng Enter hoặc phím cách cũng có thể trồng hoa."></canvas>
+          <div class="garden-guide" aria-hidden="true">
+            <svg class="garden-guide-stroke" viewBox="0 0 220 90" fill="none"><path d="M20 70C70 69 105 20 194 28" /><path class="garden-guide-arrow" d="M185 20L197 28L185 36" /></svg>
+            <svg class="garden-guide-hand" viewBox="0 0 40 44" fill="none"><path d="M13 23V6a3 3 0 0 1 6 0v12l3-2a3 3 0 0 1 4 1l2-1a3 3 0 0 1 4 2l1 1a3 3 0 0 1 4 3v9c0 6-4 10-10 10h-5c-4 0-7-2-9-5L5 26c-3-4 1-8 4-5l4 4" /><circle cx="16" cy="7" r="5" /></svg>
+          </div>
+          <span class="garden-paper-date" aria-hidden="true">20 / 10</span>
+        </div>
+        <p class="garden-hint handwritten" id="opening-hint">Bà thử chạm vào vườn hoa phía trên nha ↑</p>
+        <button class="primary-button garden-gather" id="unwrap-gift">Gói hoa gửi bà <span aria-hidden="true">↗</span></button>
+        <button class="text-button garden-skip" id="skip-opening">Đi thẳng tới quà →</button>
+        <span class="garden-sign handwritten">tui gói chút niềm vui, gửi riêng bà đó.</span>
+      </div>
+    </dialog>
+    <audio
+      id="background-music"
+      src="./audio/cu-chill-thoi.mp3"
+      autoplay
+      loop
+      preload="auto"
+      hidden
+    ></audio>
+    <div class="toast" id="toast" role="status"></div>
+    <div id="celebration" aria-hidden="true"></div>
+  </body>
+</html>
